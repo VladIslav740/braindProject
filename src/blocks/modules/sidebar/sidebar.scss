@@ -1,0 +1,16 @@
+.sidebar {
+	background: $main-color;
+	height: 513px;
+	margin: 0 -20px;
+	
+	@media (min-width: $screen-sm) {
+		border-radius: 8px;
+		margin: 0 auto;
+		width: 427px;
+	}
+	
+	@media (min-width: $screen-md) {
+		height: 543px;
+		margin: 0;
+	}
+}

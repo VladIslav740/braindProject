@@ -1,0 +1,16 @@
+.helper {
+
+	&__container {
+		border: 2px dashed $border-color;
+		border-radius: 6px;
+		height: 254px;
+		
+		@media (min-width: $screen-md) {
+			height: 180px;
+		}
+		
+		@media (min-width: $screen-lg) {
+			height: 107px;
+		}
+	}
+}

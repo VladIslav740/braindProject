@@ -1,2 +1,12 @@
+@import 'variables.scss';
+@import 'reset.scss';
+
 @import "header/header";
+
+@import "calculator/calculator";
+@import "container/container";
+@import "form/form";
+@import "sidebar/sidebar";
+@import "helper/helper";
+
 @import "footer/footer";

@@ -1,0 +1,48 @@
+.form.calculator__form
+	.calculator__form-content-wrapper
+		.form__group
+			.form__group-title
+			|
+			|
+			.form__group-cards
+				- for (var i = 0; i < 5; i++) {
+
+					case i
+						when 0
+							.form__column.form__column--xl
+								.form__item
+						when 1
+							.form__column.form__column--lg
+								.form__item
+						when 2
+							.form__column.form__column--md
+								.form__item
+						default
+							.form__column
+								.form__item
+				- }
+
+		.form__group
+			.form__group-title
+			|
+			|
+			.form__group-block
+
+		.form__group
+			.form__group-title
+			|
+			|
+			.form__group-cards
+				- for (var i = 0; i < 5; i++) {
+					.form__column.form__column--addition 
+						.form__item
+				- }
+
+		.form__group
+			.form__group-title
+			|
+			|
+			.form__group-block.form__group-block--small
+
+	.calculator__form-sidebar-wrapper
+		include ../sidebar/sidebar.pug
