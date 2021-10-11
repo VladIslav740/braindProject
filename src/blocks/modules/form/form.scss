@@ -1,84 +1,84 @@
 .form {
 	
-	&__group {
-		margin: 0 0 30px;
+    &__group {
+        margin: 0 0 30px;
 		
-		@media (min-width: $screen-lg) {
-			margin: 0 0 50px;
-		}
-		
-		&-cards {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			margin: -10px;
-			
-			@media (min-width: $screen-sm) {
-				justify-content: flex-start;
-			}
-		}
-	}
+        @media (min-width: $screen-lg) {
+            margin: 0 0 50px;
+        }
+    }
 	
-	&__column {
-		min-height: 218px;
-		padding: 10px;
-		width: 242px;
+    &__group-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -10px;
 		
-		@media (min-width: $screen-md) {
-			min-height: 238px;
-		}
+        @media (min-width: $screen-md) {
+            justify-content: flex-start;
+        }
+    }
+	
+    &__column {
+        width: 242px;
+        min-height: 218px;
+        padding: 10px;
 		
-		&--xl {
-			height: 353px;
+        @media (min-width: $screen-md) {
+            min-height: 238px;
+        }
+		
+        &--xl {
+            height: 353px;
 			
-			@media (min-width: $screen-md) {
-				height: 373px;
-			}
-		}
+            @media (min-width: $screen-md) {
+                height: 373px;
+            }
+        }
 		
-		&--lg {
-			min-height: 263px;
-		}
+        &--lg {
+            min-height: 263px;
+        }
 		
-		&--md {
-			min-height: 244px;
-		}
+        &--md {
+            min-height: 244px;
+        }
 		
-		&--addition {
-			min-height: 157px;
-			width: 100%;
+        &--addition {
+            width: 100%;
+            min-height: 157px;
 			
-			@media (min-width: $screen-md) {
-				min-height: 157px;
-			}
+            @media (min-width: $screen-md) {
+                min-height: 157px;
+            }
 
-			@media (min-width: $screen-lg) {
-				width: 50%;
-			}
-		}
-	}
+            @media (min-width: $screen-lg) {
+                width: 50%;
+            }
+        }
+    }
 	
-	&__item {
-		background: $blocks-bg-color;
-		border-radius: 8px;
-		height: 100%;
-	}
+    &__item {
+        background: $blocks-bg-color;
+        border-radius: 8px;
+        height: 100%;
+    }
 	
-	&__group-block {
-		background: $blocks-bg-color;
-		border-radius: 8px;
-		height: 249px;
+    &__group-block {
+        background: $blocks-bg-color;
+        border-radius: 8px;
+        height: 249px;
 		
-		@media (min-width: $screen-md) {
-			height: 177px;
-		}
+        @media (min-width: $screen-md) {
+            height: 177px;
+        }
 		
-		&--small {
-			height: 186px;
+        &--small {
+            height: 186px;
 			
-			@media (min-width: $screen-md) {
-				height: 157px;
-			}
-		}
-	}
+            @media (min-width: $screen-md) {
+                height: 157px;
+            }
+        }
+    }
 }
