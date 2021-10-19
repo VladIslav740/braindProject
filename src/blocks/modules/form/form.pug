@@ -4,45 +4,47 @@
 			.form__group-title
 			|
 			|
-			.form__group-cards
+			.form__group-items
 				- for (var i = 0; i < 5; i++) {
 
 					case i
 						when 0
-							.form__column.form__column--xl
-								.form__item
+							.form__item.form__item--xl
+								include ../form-item/form-item.pug
 						when 1
-							.form__column.form__column--lg
-								.form__item
+							.form__item.form__item--lg
+								include ../form-item/form-item.pug
 						when 2
-							.form__column.form__column--md
-								.form__item
+							.form__item.form__item--md
+								include ../form-item/form-item.pug
 						default
-							.form__column
-								.form__item
+							.form__item.form__item--sm
+								include ../form-item/form-item.pug
 				- }
 
 		.form__group
 			.form__group-title
 			|
 			|
-			.form__group-block
+			.form__item.form__item--w100
+				include ../form-item/form-item.pug
 
 		.form__group
 			.form__group-title
 			|
 			|
-			.form__group-cards
+			.form__group-items
 				- for (var i = 0; i < 5; i++) {
-					.form__column.form__column--addition 
-						.form__item
+					.form__item.form__item--w50
+						include ../form-item/form-item.pug
 				- }
 
 		.form__group
 			.form__group-title
 			|
 			|
-			.form__group-block.form__group-block--small
+			.form__item.form__item--w100
+				include ../form-item/form-item.pug
 
 	.calculator__form-sidebar-wrapper
 		include ../sidebar/sidebar.pug
